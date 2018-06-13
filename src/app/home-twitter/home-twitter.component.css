@@ -1,0 +1,25 @@
+ul{
+  list-style-type: none;
+}
+
+
+.allPosts{
+  margin-top: 7%;
+  margin-left: 50%;
+  padding: 1vw 1vw 1vw 1vw;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+.post{
+  border-bottom: 1px solid grey;
+  padding: 0.7vw;
+  margin-bottom: 1.8vw;
+}
+
+.subHead{
+  font-weight: bold;
+  color: dodgerblue;
+  font-family: Calibri;
+  font-size: 1.1vw;
+}

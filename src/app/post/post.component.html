@@ -1,0 +1,33 @@
+<div class="container row">
+  <div class="postSkeleton col-5">
+    <span class="title">Create a post</span>
+    <form class=" col-9" novalidate [formGroup]="form" (ngSubmit)="submitForm(form)">
+      <div class="form-group col-8">
+        <label for="username">
+          Username:
+        </label>
+        <input type="text" class="form-control" formControlName="username" id="username" value="">
+      </div>
+
+      <div class="form-group col-12">
+        <label for="content">
+          Content:
+        </label>
+        <textarea type="text" rows="4" cols="5" class="form-control" formControlName="content" id="content"
+                  value=""></textarea>
+      </div>
+      <div *ngIf="form.get('content').invalid && form.get('content').touched" class="alert alert-danger col-7">
+        <div *ngIf="form.get('content').hasError('required')">
+          post cannot be empty.
+        </div>
+        <div *ngIf="form.get('content').hasError('minlength')">
+          mimimum 10 char required!
+        </div>
+        <div *ngIf="form.get('content').hasError('maxlength')">
+          maximum 140 char allowed!
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success submitBtn" [disabled]="form.invalid"> Submit</button>
+    </form>
+  </div>
+</div>

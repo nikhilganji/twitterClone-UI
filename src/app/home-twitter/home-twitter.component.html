@@ -1,0 +1,15 @@
+
+<div class = "container row">
+  <div class = "col-7 allPosts">
+  <ul *ngIf="this.posts">
+    <li *ngFor="let post of posts | reverse">
+      <div class="post">
+        <label class="subHead">{{post.title}} </label> <br>
+        <span class="postBody"> {{post.body}} </span>
+
+      </div>
+
+    </li>
+  </ul>
+</div>
+</div>

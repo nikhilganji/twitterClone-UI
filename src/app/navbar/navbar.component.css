@@ -1,0 +1,8 @@
+.bg-light{
+  position: fixed;
+  z-index:200;
+}
+
+.router-link-active{
+  color:blue;
+}

@@ -1,0 +1,51 @@
+.postSkeleton {
+  background-color: #f8f9fa;
+  box-shadow: 1px 1px 2px grey;
+  width: 50%;
+  padding: 0.7vw 0.7vw 0.7vw 0.7vw;
+  position: absolute;
+  margin: auto;
+  margin-top: 12%;
+  right: 0;
+  left: 0;
+}
+.usernameInput{
+  width:30% !important;
+}
+
+.alert{
+  margin-left: 3.5%;
+}
+
+.title {
+  /*font-weight: bold;*/
+  color: black;
+  font-size: 1.4vw;
+  display: block;
+  margin: 0 0 0.5vw 0;
+  text-align: center;
+}
+
+.postBox {
+  margin-top: 1%;
+  background-color: lightgrey;
+  width: 35%;
+  height: 15%;
+  color: black;
+  padding: 1vw;
+  box-shadow: 1px 2px 3px grey;
+}
+
+.subHead {
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+.postBody {
+  margin-top: 10px;
+}
+
+.submitBtn{
+  position:relative;
+  margin-left: 3.5%;
+}

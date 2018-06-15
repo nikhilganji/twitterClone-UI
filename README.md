@@ -1,14 +1,13 @@
 # twitterClone-UI
-Deployed version is available at https://sheltered-badlands-67277.herokuapp.com/
-GitHub repository for full stack application using Node.js is here https://github.com/nikhilganji/twitterClone
+Deployed version is available at https://stormy-shelf-36005.herokuapp.com/
 
 Instruction to Run this repository locally:
 1. Clone the repository.
 2. Do `npm install` to install all the packages and node modules. (This step is important)
-3. Do `ng serve` (this runs the Angular application on localhost:4200)
+3. Do `ng serve` (this runs the Angular application on localhost:4200; If you want to run on different port, do `ng serve --port <number>`)
 4. The application is capable of successfully posting the tweets and displaying the tweets in most recent order.
-5. You are welcomed to use your own API.
-6. TestCases could not be delivered in this repository due to lack of time and miscommunication.(I am open to write Test Cases if time is    provided.)
-7. Screenshots are provided in screens directory for quick reference.
+5. I have created an API End point using Node/Express and deployed it on Heroku. You are welcomed to use your own API that provides id, title and body.
+6. Screenshots are provided in ./screens for quick reference.
+7. Unit tests are written for API calls as instructed.
 
 

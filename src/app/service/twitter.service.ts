@@ -13,7 +13,7 @@ import 'rxjs/add/operator/do';
 
 @Injectable()
 export class TwitterService {
-  baseUrl = `https://sheltered-badlands-67277.herokuapp.com/posts`;
+  baseUrl = `https://stormy-shelf-36005.herokuapp.com/posts`;
   constructor(private http: HttpClient) {
   }
 

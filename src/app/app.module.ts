@@ -11,19 +11,18 @@ import {TwitterService} from './service/twitter.service';
 import { HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
-import {ReversePipe} from './reverse-pipe';
-
+import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeTwitterComponent,
     PostComponent,
-    NavbarComponent,
-    ReversePipe
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
+    InfiniteScrollModule,
     RouterModule.forRoot(AppRoutes),
     FormsModule,
     HttpModule,

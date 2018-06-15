@@ -9,7 +9,9 @@ import swal from 'sweetalert2';
   styleUrls: ['./home-twitter.component.css']
 })
 export class HomeTwitterComponent implements OnInit {
-  posts: Post[];
+  posts: Post[] =[];
+  upperLimit:number =10; /* Page initially loads 10 posts */
+  dataLength: number;
 
   constructor(private tweetService: TwitterService) {
   }
@@ -20,7 +22,12 @@ export class HomeTwitterComponent implements OnInit {
 
   getTweets() {
     this.tweetService.getPosts().subscribe(post => {
-      this.posts = post;
+      if(this.upperLimit>post.length-1) {
+        this.dataLength = post.length-1;
+        this.upperLimit= post.length-1;
+      }
+      /* Reversing the collection inorder to fetch recent data first */
+      this.posts = post.reverse().slice(0, this.upperLimit);
       error => this.reject(error);
     });
   }
@@ -35,5 +42,10 @@ export class HomeTwitterComponent implements OnInit {
     }).catch(swal.noop);
   }
 
-
+  onScroll() {
+    if(!this.dataLength){
+    this.upperLimit+=2; /* Adding 2 new posts per every defined scroll action */
+    this.getTweets();
+    }
+  }
 }

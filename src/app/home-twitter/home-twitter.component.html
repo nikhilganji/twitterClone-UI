@@ -1,13 +1,17 @@
 
 <div class = "container row">
-  <div class = "col-5 allPosts">
-  <ul *ngIf="this.posts">
-    <li *ngFor="let post of posts | reverse">
-      <div class="post">
+  <div class = "col-5 allPosts"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="1700"
+  (scrolled)="onScroll()">
+      <div class="post" *ngFor="let post of posts ">
         <label class="subHead">{{post.title}} </label> <br>
         <span class="postBody"> {{post.body}} </span>
       </div>
-    </li>
-  </ul>
+    <div class="spinner" *ngIf="!this.dataLength"> </div>
+  <div *ngIf="this.dataLength" class ="notification is-warning">
+   No more posts available!
+  </div>
 </div>
 </div>

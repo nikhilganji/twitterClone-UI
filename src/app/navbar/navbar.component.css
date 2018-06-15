@@ -15,3 +15,8 @@ a{
   margin:auto;
   margin-left:3%;
 }
+
+.navbar-brand{
+  font-size: 1.2vw;
+  padding: 0.2vw 0.2vw;
+}

@@ -9,5 +9,6 @@ Instruction to Run this repository locally:
 4. The application is capable of successfully posting the tweets and displaying the tweets in most recent order.
 5. You are welcomed to use your own API.
 6. TestCases could not be delivered in this repository due to lack of time and miscommunication.(I am open to write Test Cases if time is    provided.)
+7. Screenshots are provided in screens directory for quick reference.
 
 

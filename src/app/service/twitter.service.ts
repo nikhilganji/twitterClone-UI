@@ -51,6 +51,4 @@ export class TwitterService {
       `something is wrong: ${err.message}`
     );
   }
-
-
 }

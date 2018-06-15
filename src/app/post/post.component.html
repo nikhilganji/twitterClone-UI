@@ -16,14 +16,14 @@
         <textarea type="text" rows="4" cols="5" class="form-control" formControlName="content" id="content"
                   value=""></textarea>
       </div>
-      <div *ngIf="form.get('content').invalid && form.get('content').touched" class="alert alert-danger col-7">
-        <div *ngIf="form.get('content').hasError('required')">
+      <div *ngIf="form.get('content').invalid && form.get('content').touched" class="errorNotification alert alert-danger col-7 ">
+        <div class="errorNotification" *ngIf="form.get('content').hasError('required')" >
           post cannot be empty.
         </div>
-        <div *ngIf="form.get('content').hasError('minlength')">
+        <div class="errorNotification"  *ngIf="form.get('content').hasError('minlength')" >
           mimimum 10 char required!
         </div>
-        <div *ngIf="form.get('content').hasError('maxlength')">
+        <div class="errorNotification" *ngIf="form.get('content').hasError('maxlength')" >
           maximum 140 char allowed!
         </div>
       </div>

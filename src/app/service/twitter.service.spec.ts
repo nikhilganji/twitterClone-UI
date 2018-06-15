@@ -3,7 +3,6 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { TwitterService } from './twitter.service';
 import { Post } from '../classes/post';
 describe('TwitterService', () => {
-  debugger
 
   let service: TwitterService;
   let httpMock: HttpTestingController;

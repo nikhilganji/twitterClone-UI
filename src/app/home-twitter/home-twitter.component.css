@@ -2,10 +2,13 @@ ul{
   list-style-type: none;
 }
 
-
 .allPosts{
-  margin-top: 7%;
-  margin-left: 50%;
+  width:38vw;
+  margin:auto;
+  left:0;
+  right:0;
+  margin-top: 4vw;
+  position: absolute;
   padding: 1vw 1vw 1vw 1vw;
   background-color: #ffffff;
   box-shadow: 1px 1px 1px 1px grey;
@@ -22,4 +25,8 @@ ul{
   color: dodgerblue;
   font-family: Calibri;
   font-size: 1.1vw;
+}
+
+.postBody{
+  font-size:0.9vw;
 }

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Post} from '../classes/post';
 import {TwitterService} from '../service/twitter.service';
-import {Posts} from '../classes/posts';
 import swal from 'sweetalert2';
 
 @Component({
@@ -10,7 +9,7 @@ import swal from 'sweetalert2';
   styleUrls: ['./home-twitter.component.css']
 })
 export class HomeTwitterComponent implements OnInit {
-  posts: Posts;
+  posts: Post[];
 
   constructor(private tweetService: TwitterService) {
   }
